@@ -138,7 +138,6 @@
                 </th>
                 <th>
                   <input
-               
                     style="height: 100px; width: 100px; font-size: 50px"
                     type="button"
                     class="btn btn-primary w-100"
@@ -151,12 +150,12 @@
           </div>
         </div>
       </div>
+      <a href="Crud.html" class="btn btn-primary mb-2">Go to Product CRUD</a>
     </div>
   </body>
   <script>
     let products_List = JSON.parse(
-      localStorage.getItem("product_list") ?? "[]"
-    );
+      localStorage.getItem("product_list") ?? "[]");
     let selected_product = [];
     let main_product_card = document.getElementById("main_product_card");
     let selected_table_tr = document.getElementById("selected_table_tr");
