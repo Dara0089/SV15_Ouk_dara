@@ -145,8 +145,10 @@
           <td>${item.value_category}</td>
           <td>${item.value_price} $</td>
           <td><img src="${item.value_imageURL}" alt="Image"></td>
-          <td><button class="btn btn-danger btn-sm" onclick="removeItem(${index})">Delete</button></td>
-          <td><button class="btn btn-warning btn-sm" onclick="editItem(${index})">Edit</button></td>    `;
+          <td>
+            <button class="btn btn-danger btn-sm" style="margin-right:10px;" onclick="removeItem(${index})">Delete</button>
+            <button class="btn btn-warning btn-sm" onclick="editItem(${index})">Edit</button>
+          </td>`;
         product_list.appendChild(new_tr);
       });
     }
