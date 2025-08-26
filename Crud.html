@@ -8,18 +8,7 @@
 <link rel="stylesheet" href="Sweetalert.js">
 <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <style>
-     .form_box {
-      background-color: whitesmoke;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 1px 0px 13px 8px #ccc;
-    }
-    img {
-      width: 50px;
-      height: 50px;
-    }
-  </style>
+  
 </head>
 <body>
   <div class="container-fluid">
@@ -63,7 +52,7 @@
         <div class="table-responsive">
           <table id="product_table" class="table table-borderless table-striped">
             <thead>
-              <tr class="bg-primary text-white">
+              <tr class="bg-danger text-white">
                 <th>No</th>
                 <th>Name</th>
                 <th>Category</th>
@@ -103,7 +92,7 @@
         price.focus();
         return;
       }
-      if (image_url.value.trim() === "") {
+      if (image_url.value.trim() === "") { 
         image_url.focus();
         return;
       }
